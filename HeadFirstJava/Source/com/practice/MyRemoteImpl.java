@@ -1,7 +1,12 @@
-package com.practice;
+//package com.practice;
 
 import java.rmi.*;
 import java.rmi.server.*;
+
+interface MyRemote extends Remote {
+
+    public String sayHello() throws RemoteException;
+}
 
 public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
 
@@ -15,7 +20,7 @@ public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
 
 	try {
 	    MyRemote service = new MyRemoteImpl();
-	    Naming.rebind("Remote Hello", service);
+	    Naming.rebind("Remote", service);
 	} catch (Exception e) {
 	    e.printStackTrace();
 	}

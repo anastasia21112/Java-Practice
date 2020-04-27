@@ -1,4 +1,4 @@
-package com.practice;
+//package com.practice;
 
 import java.rmi.*;
 
@@ -11,7 +11,7 @@ public class MyRemoteClient {
     public void go() {
 
 	try {
-	    MyRemote service = (MyRemote) Naming.lookup("rmi://127.0.0.1/Remote Hello");
+	    MyRemote service = (MyRemote) Naming.lookup("rmi://127.0.0.1/Remote");
 
 	    String s = service.sayHello();
 
