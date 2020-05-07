@@ -1,2 +1,2 @@
 # Java-Practice
-This is a repository of personal practice I have conducted from online, books, and other sources. In this repository, I practiced with very basic OOP to more advanced data structures, server construction, and GUI creation. 
+This is a repository of personal practice I have conducted from online, books, and other sources. In this repository, I practiced with very basic OOP to more advanced data structures, server construction, and GUI creation. I also made a servlet to be used with a web server, and my final project was a GUI with three different services–music player, date maker, and dice shaker–that could connect with other people on the server created. 
